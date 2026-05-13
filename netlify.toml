@@ -1,0 +1,27 @@
+[build]
+  command = "npm run build:netlify"
+  publish = "dist/client"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[edge_functions]]
+  function = "ssr"
+  path = "/*"
+  excluded_patterns = ["/assets/*", "/favicon*", "/robots.txt", "/site.webmanifest"]
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/favicon*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/site.webmanifest"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    Content-Type = "application/manifest+json"
