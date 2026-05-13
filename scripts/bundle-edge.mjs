@@ -1,70 +1,55 @@
-// Bundles dist/server/server.js into a self-contained Netlify Function
+// Bundles dist/server into a single Netlify Function directory.
+// Strategy: copy the server files as-is and generate a thin handler shim,
+// because the server chunks use CJS/ESM mixed modules that break when
+// re-bundled (react-dom/server uses dynamic require internally).
 import { build } from "esbuild";
-import { mkdirSync, readFileSync, writeFileSync } from "fs";
+import { mkdirSync, cpSync, writeFileSync, readdirSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const entry = join(root, "dist/server/server.js");
-const outdir = join(root, "netlify/functions");
+const serverDir = join(root, "dist/server");
+const outdir = join(root, "netlify/functions/ssr");
 
+// Clean and recreate output dir
 mkdirSync(outdir, { recursive: true });
 
-await build({
-  entryPoints: [entry],
-  outfile: join(outdir, "server.mjs"),
-  bundle: true,
-  format: "esm",
-  platform: "node",
-  target: "node20",
-  // Externalize node built-ins — they are available at runtime
-  external: [
-    "node:*",
-    "async_hooks",
-    "stream",
-    "crypto",
-    "buffer",
-    "util",
-    "events",
-    "path",
-    "fs",
-    "url",
-    "os",
-    "net",
-    "http",
-    "https",
-    "zlib",
-  ],
-  minify: false,
-  logLevel: "info",
-});
+// Copy the entire dist/server into netlify/functions/ssr/
+cpSync(serverDir, outdir, { recursive: true });
 
-// Append the Netlify Function handler that adapts Web Fetch API → Lambda format
-const wrapper = `
-// Netlify Function handler: adapts AWS Lambda event → Web Fetch API → Lambda response
-export const handler = async (event, context) => {
-  const url = new URL(
-    event.path + (event.rawQuery ? "?" + event.rawQuery : ""),
-    "http://localhost"
-  );
+// Write a thin CJS handler shim that imports the server and adapts it
+// Netlify Functions support ESM via .mjs extension
+const handler = `
+import server from "./server.js";
 
+export const handler = async (event) => {
+  const base = "https://" + (event.headers?.host ?? "localhost");
+  const path = event.path ?? "/";
+  const qs = event.rawQuery ? "?" + event.rawQuery : "";
+  const url = base + path + qs;
+
+  const method = event.httpMethod ?? "GET";
   const headers = new Headers(event.headers ?? {});
-  const method = event.httpMethod;
-  const body =
-    event.body && method !== "GET" && method !== "HEAD"
-      ? event.isBase64Encoded
-        ? Buffer.from(event.body, "base64")
-        : event.body
-      : undefined;
 
-  const request = new Request(url.toString(), { method, headers, body });
+  let body = undefined;
+  if (event.body && method !== "GET" && method !== "HEAD") {
+    body = event.isBase64Encoded
+      ? Buffer.from(event.body, "base64")
+      : event.body;
+  }
 
-  const response = await server.fetch(request, {}, {});
+  const request = new Request(url, { method, headers, body });
+
+  let response;
+  try {
+    response = await server.fetch(request, {}, {});
+  } catch (err) {
+    console.error("SSR handler error:", err);
+    return { statusCode: 500, body: "Internal Server Error" };
+  }
 
   const responseHeaders = {};
-  response.headers.forEach((value, key) => {
-    responseHeaders[key] = value;
-  });
+  response.headers.forEach((v, k) => { responseHeaders[k] = v; });
 
   const responseBody = await response.text();
 
@@ -76,8 +61,6 @@ export const handler = async (event, context) => {
 };
 `;
 
-const outfile = join(outdir, "server.mjs");
-const existing = readFileSync(outfile, "utf8");
-writeFileSync(outfile, existing + wrapper);
-
-console.log("Netlify Function bundled →", outfile);
+writeFileSync(join(outdir, "handler.mjs"), handler.trimStart());
+console.log("Netlify Function written →", outdir);
+console.log("Files:", readdirSync(outdir).join(", "));
