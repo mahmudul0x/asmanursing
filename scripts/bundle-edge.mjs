@@ -63,5 +63,10 @@ export const handler = async (event) => {
 
 // Netlify uses the folder name as function name and looks for index.mjs as entry
 writeFileSync(join(outdir, "index.mjs"), handler.trimStart());
+
+// Lambda runtime needs package.json with "type":"module" in the function folder
+// to treat .js files as ESM (otherwise it falls back to CJS and chokes on export)
+writeFileSync(join(outdir, "package.json"), JSON.stringify({ type: "module" }, null, 2));
+
 console.log("Netlify Function written →", outdir);
 console.log("Files:", readdirSync(outdir).join(", "));
