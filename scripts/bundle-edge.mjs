@@ -2,8 +2,7 @@
 // Strategy: copy the server files as-is and generate a thin handler shim,
 // because the server chunks use CJS/ESM mixed modules that break when
 // re-bundled (react-dom/server uses dynamic require internally).
-import { build } from "esbuild";
-import { mkdirSync, cpSync, writeFileSync, readdirSync } from "fs";
+import { mkdirSync, cpSync, writeFileSync, readdirSync, rmSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -12,6 +11,7 @@ const serverDir = join(root, "dist/server");
 const outdir = join(root, "netlify/functions/ssr");
 
 // Clean and recreate output dir
+rmSync(outdir, { recursive: true, force: true });
 mkdirSync(outdir, { recursive: true });
 
 // Copy the entire dist/server into netlify/functions/ssr/
@@ -61,6 +61,7 @@ export const handler = async (event) => {
 };
 `;
 
-writeFileSync(join(outdir, "handler.mjs"), handler.trimStart());
+// Netlify uses the folder name as function name and looks for index.mjs as entry
+writeFileSync(join(outdir, "index.mjs"), handler.trimStart());
 console.log("Netlify Function written →", outdir);
 console.log("Files:", readdirSync(outdir).join(", "));
