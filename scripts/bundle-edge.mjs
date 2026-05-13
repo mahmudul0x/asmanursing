@@ -1,5 +1,5 @@
 import { build } from "esbuild";
-import { mkdirSync, writeFileSync, rmSync, readFileSync } from "fs";
+import { mkdirSync, writeFileSync, rmSync, readFileSync, unlinkSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -9,48 +9,20 @@ const outdir = join(root, "netlify/functions/ssr");
 rmSync(outdir, { recursive: true, force: true });
 mkdirSync(outdir, { recursive: true });
 
-// Step 1: bundle the ESM server into a CJS IIFE that exposes server via global
+// Write a temp entry that wires server.fetch → Lambda exports.handler
+// Everything in one file so Netlify Lambda has no missing dependency
 const entryFile = join(root, "scripts", "_entry.mjs");
 writeFileSync(entryFile, `
 import server from "${join(root, "dist/server/server.js").replace(/\\/g, "/")}";
-// Expose server on global so the outer CJS wrapper can access it
-globalThis.__ssrServer = server;
-`);
 
-await build({
-  entryPoints: [entryFile],
-  outfile: join(outdir, "_bundle.cjs"),
-  bundle: true,
-  format: "cjs",
-  platform: "node",
-  target: "node20",
-  external: [
-    "node:*", "async_hooks", "stream", "crypto", "buffer", "util",
-    "events", "path", "fs", "url", "os", "net", "http", "https", "zlib",
-    "string_decoder", "querystring", "assert", "tty", "worker_threads",
-  ],
-  minify: false,
-  logLevel: "error",
-});
-
-import { unlinkSync } from "fs";
-unlinkSync(entryFile);
-
-// Step 2: write a pure CJS index.js that requires the bundle then exports handler
-const indexJs = `"use strict";
-// Load the bundled SSR server (sets globalThis.__ssrServer)
-require("./_bundle.cjs");
-
-exports.handler = async function(event) {
-  const server = globalThis.__ssrServer;
-  const base = "https://" + ((event.headers && event.headers.host) || "localhost");
-  const url = base + (event.path || "/") + (event.rawQuery ? "?" + event.rawQuery : "");
-  const method = event.httpMethod || "GET";
-  const headers = new Headers(event.headers || {});
-  const body = (event.body && method !== "GET" && method !== "HEAD")
+export const handler = async (event) => {
+  const base = "https://" + (event.headers?.host ?? "localhost");
+  const url = base + (event.path ?? "/") + (event.rawQuery ? "?" + event.rawQuery : "");
+  const method = event.httpMethod ?? "GET";
+  const headers = new Headers(event.headers ?? {});
+  const body = event.body && method !== "GET" && method !== "HEAD"
     ? (event.isBase64Encoded ? Buffer.from(event.body, "base64") : event.body)
     : undefined;
-
   let response;
   try {
     response = await server.fetch(new Request(url, { method, headers, body }), {}, {});
@@ -58,17 +30,35 @@ exports.handler = async function(event) {
     console.error("SSR error:", err);
     return { statusCode: 500, body: "Internal Server Error" };
   }
-
   const resHeaders = {};
-  response.headers.forEach(function(v, k) { resHeaders[k] = v; });
-  return {
-    statusCode: response.status,
-    headers: resHeaders,
-    body: await response.text(),
-  };
+  response.headers.forEach((v, k) => { resHeaders[k] = v; });
+  return { statusCode: response.status, headers: resHeaders, body: await response.text() };
 };
-`;
+`);
 
-// Use .cjs extension so Node ignores root package.json "type":"module"
-writeFileSync(join(outdir, "index.cjs"), indexJs);
-console.log("Netlify Function bundled → netlify/functions/ssr/");
+// Bundle everything into a SINGLE index.cjs — no external files needed
+await build({
+  entryPoints: [entryFile],
+  outfile: join(outdir, "index.cjs"),
+  bundle: true,
+  format: "cjs",
+  platform: "node",
+  target: "node20",
+  // Only externalize true Node.js built-ins (available in Lambda runtime)
+  external: [
+    "node:async_hooks", "node:stream", "node:stream/web", "node:crypto",
+    "node:buffer", "node:util", "node:events", "node:path", "node:fs",
+    "node:url", "node:os", "node:net", "node:http", "node:https",
+    "node:zlib", "node:string_decoder", "node:querystring", "node:assert",
+    "node:tty", "node:worker_threads", "node:perf_hooks",
+    // bare versions too
+    "async_hooks", "stream", "crypto", "buffer", "util", "events",
+    "path", "fs", "url", "os", "net", "http", "https", "zlib",
+    "string_decoder", "querystring", "assert", "tty", "worker_threads",
+  ],
+  minify: false,
+  logLevel: "error",
+});
+
+unlinkSync(entryFile);
+console.log("Netlify Function bundled → netlify/functions/ssr/index.cjs");

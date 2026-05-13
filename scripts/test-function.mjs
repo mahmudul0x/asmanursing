@@ -3,12 +3,11 @@ import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const fnDir = join(__dirname, "../netlify/functions/ssr");
-const require = createRequire(join(fnDir, "index.cjs"));
-const { handler } = require("./index.cjs");
+const fnPath = join(__dirname, "../netlify/functions/ssr/index.cjs");
+const require = createRequire(fnPath);
+const { handler } = require(fnPath);
 
 console.log("handler type:", typeof handler);
-
 const result = await handler({
   path: "/",
   rawQuery: "",
@@ -17,6 +16,5 @@ const result = await handler({
   body: null,
   isBase64Encoded: false,
 });
-
 console.log("Status:", result.statusCode);
-console.log("Body:", result.body?.slice(0, 100));
+console.log("Body:", result.body?.slice(0, 80));
