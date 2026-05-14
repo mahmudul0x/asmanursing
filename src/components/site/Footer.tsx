@@ -13,7 +13,7 @@ export function Footer() {
 
         {/* Brand column */}
         <div className="md:col-span-1">
-          <Logo />
+          <Logo light />
           <p className="mt-5 text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.65)" }}>
             Compassionate, professional home nursing and caregiver services trusted by families across Dhaka.
           </p>
