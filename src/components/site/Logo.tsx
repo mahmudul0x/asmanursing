@@ -7,7 +7,7 @@ export function Logo({ light = false }: { light?: boolean }) {
       <img
         src={logoSrc}
         alt="The Ashma Home Care"
-        style={{ width: 90, height: 90 }}
+        style={{ width: 52, height: 52 }}
         className={`object-contain transition-transform group-hover:scale-105 ${
           light ? "brightness-0 invert" : ""
         }`}
