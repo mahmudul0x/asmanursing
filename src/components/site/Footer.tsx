@@ -43,7 +43,7 @@ export function Footer() {
             Quick Links
           </h4>
           <ul className="space-y-2.5 text-sm">
-            {NAV.slice(0, 5).map((n) => (
+            {NAV.slice(0, 6).map((n) => (
               <li key={n.to}>
                 <Link
                   to={n.to}
