@@ -27,7 +27,7 @@ export function Header() {
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 h-16 md:h-18 flex items-center justify-between gap-4">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 h-24 flex items-center justify-between gap-4">
         <Logo />
         <nav className="hidden lg:flex items-center gap-1">
           {NAV.map((n) => (

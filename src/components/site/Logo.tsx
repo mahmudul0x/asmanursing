@@ -7,17 +7,16 @@ export function Logo({ light = false }: { light?: boolean }) {
       <img
         src={logoSrc}
         alt="The Ashma Home Care"
-        width={56}
-        height={56}
-        className={`h-14 w-14 object-contain transition-transform group-hover:scale-105 ${
+        style={{ width: 90, height: 90 }}
+        className={`object-contain transition-transform group-hover:scale-105 ${
           light ? "brightness-0 invert" : ""
         }`}
       />
       <span className="leading-tight">
-        <span className={`block font-display text-[16px] font-bold tracking-tight ${light ? "text-white" : "text-navy"}`}>
+        <span className={`block font-display text-[18px] font-bold tracking-tight ${light ? "text-white" : "text-navy"}`}>
           The ASHMA
         </span>
-        <span className={`block text-[11px] uppercase tracking-[0.18em] ${light ? "text-white/70" : "text-muted-foreground"}`}>
+        <span className={`block text-[12px] uppercase tracking-[0.18em] ${light ? "text-white/70" : "text-muted-foreground"}`}>
           Home Care
         </span>
       </span>

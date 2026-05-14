@@ -38930,16 +38930,16 @@ var init_server4 = __esm({
   }
 });
 
-// dist/server/assets/_tanstack-start-manifest_v-BMMvzRpB.js
-var tanstack_start_manifest_v_BMMvzRpB_exports = {};
-__export(tanstack_start_manifest_v_BMMvzRpB_exports, {
+// dist/server/assets/_tanstack-start-manifest_v-D6MxA-76.js
+var tanstack_start_manifest_v_D6MxA_76_exports = {};
+__export(tanstack_start_manifest_v_D6MxA_76_exports, {
   tsrStartManifest: () => tsrStartManifest
 });
 var tsrStartManifest;
-var init_tanstack_start_manifest_v_BMMvzRpB = __esm({
-  "dist/server/assets/_tanstack-start-manifest_v-BMMvzRpB.js"() {
+var init_tanstack_start_manifest_v_D6MxA_76 = __esm({
+  "dist/server/assets/_tanstack-start-manifest_v-D6MxA-76.js"() {
     "use strict";
-    tsrStartManifest = () => ({ routes: { __root__: { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/__root.tsx", children: ["/", "/about", "/blog", "/booking", "/careers", "/contact", "/faq", "/packages", "/payment", "/services", "/sitemap.xml", "/testimonials"], assets: void 0, preloads: ["/assets/index-JbHq8nB1.js"] }, "/": { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/index.tsx", children: void 0, assets: void 0, preloads: ["/assets/index-CrohwpkV.js", "/assets/index-CiS9WNzc.js", "/assets/proxy-DY1_ys6V.js", "/assets/arrow-right-CdanWM-Y.js", "/assets/Testimonials-CpiHAPbS.js", "/assets/about-team-DAZDyUAb.js", "/assets/services-CVOjfVXT.js", "/assets/stethoscope-m0w8V6rR.js", "/assets/heart-handshake-CtefELsQ.js", "/assets/Reveal-Bda7O4JC.js", "/assets/wind-C5GhnXah.js", "/assets/CTA-bNgSklwo.js", "/assets/quote-AgimuveS.js", "/assets/service-pneumonia-9KL5EAjy.js"] }, "/about": { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/about.tsx", children: void 0, assets: void 0, preloads: ["/assets/about-CTGrYoYK.js", "/assets/PageHeader-1NB4XCgj.js", "/assets/Reveal-Bda7O4JC.js", "/assets/about-team-DAZDyUAb.js", "/assets/CTA-bNgSklwo.js", "/assets/stethoscope-m0w8V6rR.js", "/assets/heart-handshake-CtefELsQ.js", "/assets/sparkles-URK1O7O5.js", "/assets/graduation-cap-C18QrLLt.js", "/assets/quote-AgimuveS.js", "/assets/arrow-right-CdanWM-Y.js", "/assets/circle-check-Dt9B52cb.js", "/assets/proxy-DY1_ys6V.js"] }, "/blog": { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/blog.tsx", children: void 0, assets: void 0, preloads: ["/assets/blog-COPoROpN.js", "/assets/PageHeader-1NB4XCgj.js", "/assets/Reveal-Bda7O4JC.js", "/assets/service-pneumonia-9KL5EAjy.js", "/assets/arrow-right-CdanWM-Y.js", "/assets/proxy-DY1_ys6V.js"] }, "/booking": { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/booking.tsx", children: void 0, assets: void 0, preloads: ["/assets/booking-DdRQfmaD.js", "/assets/PageHeader-1NB4XCgj.js", "/assets/input-Ez5ETFON.js", "/assets/label-C7ofoTrw.js", "/assets/textarea-DZMBsMA3.js", "/assets/select-DQ7hoVII.js", "/assets/services-CVOjfVXT.js", "/assets/Reveal-Bda7O4JC.js", "/assets/siren-BH7yolr4.js", "/assets/credit-card-BO7Y8Yje.js", "/assets/circle-check-Dt9B52cb.js", "/assets/index-Bcc2SXeR.js", "/assets/check-CXOxZnFh.js", "/assets/service-pneumonia-9KL5EAjy.js", "/assets/proxy-DY1_ys6V.js"] }, "/careers": { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/careers.tsx", children: void 0, assets: void 0, preloads: ["/assets/careers-BTSaPmdm.js", "/assets/PageHeader-1NB4XCgj.js", "/assets/input-Ez5ETFON.js", "/assets/label-C7ofoTrw.js", "/assets/textarea-DZMBsMA3.js", "/assets/select-DQ7hoVII.js", "/assets/Reveal-Bda7O4JC.js", "/assets/heart-handshake-CtefELsQ.js", "/assets/graduation-cap-C18QrLLt.js", "/assets/index-Bcc2SXeR.js", "/assets/check-CXOxZnFh.js", "/assets/proxy-DY1_ys6V.js"] }, "/contact": { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/contact.tsx", children: void 0, assets: void 0, preloads: ["/assets/contact-n8vtZWwx.js", "/assets/PageHeader-1NB4XCgj.js", "/assets/input-Ez5ETFON.js", "/assets/label-C7ofoTrw.js", "/assets/textarea-DZMBsMA3.js", "/assets/Reveal-Bda7O4JC.js", "/assets/siren-BH7yolr4.js", "/assets/proxy-DY1_ys6V.js"] }, "/faq": { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/faq.tsx", children: void 0, assets: void 0, preloads: ["/assets/faq-BiO-WlbJ.js", "/assets/PageHeader-1NB4XCgj.js", "/assets/index-Bcc2SXeR.js", "/assets/CTA-bNgSklwo.js", "/assets/arrow-right-CdanWM-Y.js"] }, "/packages": { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/packages.tsx", children: void 0, assets: void 0, preloads: ["/assets/packages-QKDLVM-W.js", "/assets/PageHeader-1NB4XCgj.js", "/assets/Reveal-Bda7O4JC.js", "/assets/CTA-bNgSklwo.js", "/assets/sparkles-URK1O7O5.js", "/assets/check-CXOxZnFh.js", "/assets/proxy-DY1_ys6V.js", "/assets/arrow-right-CdanWM-Y.js"] }, "/payment": { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/payment.tsx", children: void 0, assets: void 0, preloads: ["/assets/payment-CdJ-xx_7.js", "/assets/PageHeader-1NB4XCgj.js", "/assets/input-Ez5ETFON.js", "/assets/label-C7ofoTrw.js", "/assets/index-CiS9WNzc.js", "/assets/proxy-DY1_ys6V.js", "/assets/circle-check-Dt9B52cb.js", "/assets/arrow-right-CdanWM-Y.js", "/assets/credit-card-BO7Y8Yje.js"] }, "/services": { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/services.tsx", children: void 0, assets: void 0, preloads: ["/assets/services-DRS9qmMA.js", "/assets/PageHeader-1NB4XCgj.js", "/assets/services-CVOjfVXT.js", "/assets/Reveal-Bda7O4JC.js", "/assets/input-Ez5ETFON.js", "/assets/CTA-bNgSklwo.js", "/assets/proxy-DY1_ys6V.js", "/assets/index-CiS9WNzc.js", "/assets/stethoscope-m0w8V6rR.js", "/assets/wind-C5GhnXah.js", "/assets/check-CXOxZnFh.js", "/assets/arrow-right-CdanWM-Y.js", "/assets/service-pneumonia-9KL5EAjy.js"] }, "/testimonials": { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/testimonials.tsx", children: void 0, assets: void 0, preloads: ["/assets/testimonials-C98J4MjT.js", "/assets/PageHeader-1NB4XCgj.js", "/assets/Testimonials-CpiHAPbS.js", "/assets/Reveal-Bda7O4JC.js", "/assets/CTA-bNgSklwo.js", "/assets/quote-AgimuveS.js", "/assets/proxy-DY1_ys6V.js", "/assets/arrow-right-CdanWM-Y.js"] } }, clientEntry: "/assets/index-JbHq8nB1.js" });
+    tsrStartManifest = () => ({ routes: { __root__: { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/__root.tsx", children: ["/", "/about", "/blog", "/booking", "/careers", "/contact", "/faq", "/packages", "/payment", "/services", "/sitemap.xml", "/testimonials"], assets: void 0, preloads: ["/assets/index-CDuRaZMU.js"] }, "/": { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/index.tsx", children: void 0, assets: void 0, preloads: ["/assets/index-ByV2HeDM.js", "/assets/index-DDBgYEa_.js", "/assets/proxy-DkZpyHgR.js", "/assets/arrow-right-B8VKXW47.js", "/assets/Testimonials-vcl2fEAN.js", "/assets/about-team-B8F23oH9.js", "/assets/services-C7_zayPU.js", "/assets/stethoscope-i42ivD-g.js", "/assets/heart-handshake-BdYVDLn0.js", "/assets/Reveal-BrHSIZGM.js", "/assets/wind-CP4_UhRf.js", "/assets/CTA-BRlBKqpU.js", "/assets/quote-DhI_Xzh9.js", "/assets/service-pneumonia-9KL5EAjy.js"] }, "/about": { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/about.tsx", children: void 0, assets: void 0, preloads: ["/assets/about-8ZdI3rVA.js", "/assets/PageHeader-D-6wDaDA.js", "/assets/Reveal-BrHSIZGM.js", "/assets/about-team-B8F23oH9.js", "/assets/CTA-BRlBKqpU.js", "/assets/stethoscope-i42ivD-g.js", "/assets/heart-handshake-BdYVDLn0.js", "/assets/sparkles-DEU5cBnu.js", "/assets/graduation-cap-C_Mkc8F_.js", "/assets/quote-DhI_Xzh9.js", "/assets/arrow-right-B8VKXW47.js", "/assets/circle-check-B6zGfwhC.js", "/assets/proxy-DkZpyHgR.js"] }, "/blog": { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/blog.tsx", children: void 0, assets: void 0, preloads: ["/assets/blog-0ZMffP41.js", "/assets/PageHeader-D-6wDaDA.js", "/assets/Reveal-BrHSIZGM.js", "/assets/service-pneumonia-9KL5EAjy.js", "/assets/arrow-right-B8VKXW47.js", "/assets/proxy-DkZpyHgR.js"] }, "/booking": { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/booking.tsx", children: void 0, assets: void 0, preloads: ["/assets/booking-DjBEkGEe.js", "/assets/PageHeader-D-6wDaDA.js", "/assets/input-V4wqalJu.js", "/assets/label-lnVc7Zts.js", "/assets/textarea-DcRbKvlq.js", "/assets/select-BfTGAHAg.js", "/assets/services-C7_zayPU.js", "/assets/Reveal-BrHSIZGM.js", "/assets/siren-B0SALzA6.js", "/assets/credit-card-TwToziHr.js", "/assets/circle-check-B6zGfwhC.js", "/assets/index-CrFxSzsJ.js", "/assets/check-BS-zwBAl.js", "/assets/service-pneumonia-9KL5EAjy.js", "/assets/proxy-DkZpyHgR.js"] }, "/careers": { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/careers.tsx", children: void 0, assets: void 0, preloads: ["/assets/careers-BxYJlCGf.js", "/assets/PageHeader-D-6wDaDA.js", "/assets/input-V4wqalJu.js", "/assets/label-lnVc7Zts.js", "/assets/textarea-DcRbKvlq.js", "/assets/select-BfTGAHAg.js", "/assets/Reveal-BrHSIZGM.js", "/assets/heart-handshake-BdYVDLn0.js", "/assets/graduation-cap-C_Mkc8F_.js", "/assets/index-CrFxSzsJ.js", "/assets/check-BS-zwBAl.js", "/assets/proxy-DkZpyHgR.js"] }, "/contact": { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/contact.tsx", children: void 0, assets: void 0, preloads: ["/assets/contact-DEU4ijMY.js", "/assets/PageHeader-D-6wDaDA.js", "/assets/input-V4wqalJu.js", "/assets/label-lnVc7Zts.js", "/assets/textarea-DcRbKvlq.js", "/assets/Reveal-BrHSIZGM.js", "/assets/siren-B0SALzA6.js", "/assets/proxy-DkZpyHgR.js"] }, "/faq": { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/faq.tsx", children: void 0, assets: void 0, preloads: ["/assets/faq-Cu7oqZdk.js", "/assets/PageHeader-D-6wDaDA.js", "/assets/index-CrFxSzsJ.js", "/assets/CTA-BRlBKqpU.js", "/assets/arrow-right-B8VKXW47.js"] }, "/packages": { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/packages.tsx", children: void 0, assets: void 0, preloads: ["/assets/packages-2tcw4ml_.js", "/assets/PageHeader-D-6wDaDA.js", "/assets/Reveal-BrHSIZGM.js", "/assets/CTA-BRlBKqpU.js", "/assets/sparkles-DEU5cBnu.js", "/assets/check-BS-zwBAl.js", "/assets/proxy-DkZpyHgR.js", "/assets/arrow-right-B8VKXW47.js"] }, "/payment": { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/payment.tsx", children: void 0, assets: void 0, preloads: ["/assets/payment-3espMm8r.js", "/assets/PageHeader-D-6wDaDA.js", "/assets/input-V4wqalJu.js", "/assets/label-lnVc7Zts.js", "/assets/index-DDBgYEa_.js", "/assets/proxy-DkZpyHgR.js", "/assets/circle-check-B6zGfwhC.js", "/assets/arrow-right-B8VKXW47.js", "/assets/credit-card-TwToziHr.js"] }, "/services": { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/services.tsx", children: void 0, assets: void 0, preloads: ["/assets/services-CQIkjBhS.js", "/assets/PageHeader-D-6wDaDA.js", "/assets/services-C7_zayPU.js", "/assets/Reveal-BrHSIZGM.js", "/assets/input-V4wqalJu.js", "/assets/CTA-BRlBKqpU.js", "/assets/proxy-DkZpyHgR.js", "/assets/index-DDBgYEa_.js", "/assets/stethoscope-i42ivD-g.js", "/assets/wind-CP4_UhRf.js", "/assets/check-BS-zwBAl.js", "/assets/arrow-right-B8VKXW47.js", "/assets/service-pneumonia-9KL5EAjy.js"] }, "/testimonials": { filePath: "E:/Website for offer/ashma-care-connect-main/src/routes/testimonials.tsx", children: void 0, assets: void 0, preloads: ["/assets/testimonials-Dc6MwfAB.js", "/assets/PageHeader-D-6wDaDA.js", "/assets/Testimonials-vcl2fEAN.js", "/assets/Reveal-BrHSIZGM.js", "/assets/CTA-BRlBKqpU.js", "/assets/quote-DhI_Xzh9.js", "/assets/proxy-DkZpyHgR.js", "/assets/arrow-right-B8VKXW47.js"] } }, clientEntry: "/assets/index-CDuRaZMU.js" });
   }
 });
 
@@ -80676,7 +80676,7 @@ var init_Testimonials_BEkzd85o = __esm({
   }
 });
 
-// dist/server/assets/CTA-DvQ09J-t.js
+// dist/server/assets/CTA-BZHDXPNM.js
 function CTA() {
   return /* @__PURE__ */ (0, import_jsx_runtime26.jsx)("section", { className: "py-16 md:py-20", children: /* @__PURE__ */ (0, import_jsx_runtime26.jsx)("div", { className: "mx-auto max-w-7xl px-4 sm:px-6", children: /* @__PURE__ */ (0, import_jsx_runtime26.jsxs)("div", { className: "relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary via-primary to-teal p-10 md:p-16 text-primary-foreground shadow-glow", children: [
     /* @__PURE__ */ (0, import_jsx_runtime26.jsx)("div", { className: "absolute -top-24 -right-24 h-64 w-64 rounded-full bg-white/15 blur-3xl" }),
@@ -80698,31 +80698,31 @@ function CTA() {
   ] }) }) });
 }
 var import_jsx_runtime26, import_lucide_react2;
-var init_CTA_DvQ09J_t = __esm({
-  "dist/server/assets/CTA-DvQ09J-t.js"() {
+var init_CTA_BZHDXPNM = __esm({
+  "dist/server/assets/CTA-BZHDXPNM.js"() {
     "use strict";
     import_jsx_runtime26 = __toESM(require_jsx_runtime(), 1);
     init_esm5();
     import_lucide_react2 = __toESM(require_lucide_react(), 1);
-    init_router_YM59nK0l();
+    init_router_WrAphpZi();
   }
 });
 
-// dist/server/assets/testimonials-D8FKqS_6.js
-var testimonials_D8FKqS_6_exports = {};
-__export(testimonials_D8FKqS_6_exports, {
+// dist/server/assets/testimonials-DuDFC7Za.js
+var testimonials_DuDFC7Za_exports = {};
+__export(testimonials_DuDFC7Za_exports, {
   component: () => SplitComponent
 });
 var import_jsx_runtime27, import_lucide_react3, import_react36, SplitComponent;
-var init_testimonials_D8FKqS_6 = __esm({
-  "dist/server/assets/testimonials-D8FKqS_6.js"() {
+var init_testimonials_DuDFC7Za = __esm({
+  "dist/server/assets/testimonials-DuDFC7Za.js"() {
     "use strict";
     import_jsx_runtime27 = __toESM(require_jsx_runtime(), 1);
     init_PageHeader_STPzDVcA();
     init_Testimonials_BEkzd85o();
     import_lucide_react3 = __toESM(require_lucide_react(), 1);
     init_Reveal_DXQFk0YT();
-    init_CTA_DvQ09J_t();
+    init_CTA_BZHDXPNM();
     import_react36 = __toESM(require_react(), 1);
     init_dist5();
     init_clsx();
@@ -80847,14 +80847,14 @@ var init_services_B0CwK93V = __esm({
   }
 });
 
-// dist/server/assets/input-0PFr6SsO.js
+// dist/server/assets/input-D90GIDN9.js
 var import_jsx_runtime28, React10, Input;
-var init_input_0PFr6SsO = __esm({
-  "dist/server/assets/input-0PFr6SsO.js"() {
+var init_input_D90GIDN9 = __esm({
+  "dist/server/assets/input-D90GIDN9.js"() {
     "use strict";
     import_jsx_runtime28 = __toESM(require_jsx_runtime(), 1);
     React10 = __toESM(require_react(), 1);
-    init_router_YM59nK0l();
+    init_router_WrAphpZi();
     Input = React10.forwardRef(
       ({ className, type, ...props }, ref) => {
         return /* @__PURE__ */ (0, import_jsx_runtime28.jsx)(
@@ -80875,9 +80875,9 @@ var init_input_0PFr6SsO = __esm({
   }
 });
 
-// dist/server/assets/services-CT_KffNO.js
-var services_CT_KffNO_exports = {};
-__export(services_CT_KffNO_exports, {
+// dist/server/assets/services-Zn8CzWDw.js
+var services_Zn8CzWDw_exports = {};
+__export(services_Zn8CzWDw_exports, {
   component: () => ServicesPage
 });
 function ServicesPage() {
@@ -81049,8 +81049,8 @@ function ServiceCard({
   ] }) });
 }
 var import_jsx_runtime29, import_react37, import_lucide_react4, ICONS, CATEGORIES;
-var init_services_CT_KffNO = __esm({
-  "dist/server/assets/services-CT_KffNO.js"() {
+var init_services_Zn8CzWDw = __esm({
+  "dist/server/assets/services-Zn8CzWDw.js"() {
     "use strict";
     import_jsx_runtime29 = __toESM(require_jsx_runtime(), 1);
     init_esm5();
@@ -81059,9 +81059,9 @@ var init_services_CT_KffNO = __esm({
     init_PageHeader_STPzDVcA();
     init_services_B0CwK93V();
     init_Reveal_DXQFk0YT();
-    init_input_0PFr6SsO();
+    init_input_D90GIDN9();
     import_lucide_react4 = __toESM(require_lucide_react(), 1);
-    init_CTA_DvQ09J_t();
+    init_CTA_BZHDXPNM();
     init_dist5();
     init_clsx();
     init_dist6();
@@ -81149,16 +81149,16 @@ var init_dist8 = __esm({
   }
 });
 
-// dist/server/assets/label-6FI40CjM.js
+// dist/server/assets/label-D61Nlcsz.js
 var import_jsx_runtime32, React13, labelVariants, Label2;
-var init_label_6FI40CjM = __esm({
-  "dist/server/assets/label-6FI40CjM.js"() {
+var init_label_D61Nlcsz = __esm({
+  "dist/server/assets/label-D61Nlcsz.js"() {
     "use strict";
     import_jsx_runtime32 = __toESM(require_jsx_runtime(), 1);
     React13 = __toESM(require_react(), 1);
     init_dist8();
     init_dist5();
-    init_router_YM59nK0l();
+    init_router_WrAphpZi();
     labelVariants = cva(
       "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
     );
@@ -120563,9 +120563,9 @@ var require_jspdf_node_min = __commonJS({
   }
 });
 
-// dist/server/assets/payment-CLEhxNN5.js
-var payment_CLEhxNN5_exports = {};
-__export(payment_CLEhxNN5_exports, {
+// dist/server/assets/payment-Bbsme8cS.js
+var payment_Bbsme8cS_exports = {};
+__export(payment_Bbsme8cS_exports, {
   component: () => PaymentPage
 });
 function PaymentPage() {
@@ -120928,17 +120928,17 @@ function downloadReceipt({
   doc.save(`ASHMA-Receipt-${txn}.pdf`);
 }
 var import_jsx_runtime33, import_react39, import_jspdf, import_lucide_react5, METHODS;
-var init_payment_CLEhxNN5 = __esm({
-  "dist/server/assets/payment-CLEhxNN5.js"() {
+var init_payment_Bbsme8cS = __esm({
+  "dist/server/assets/payment-Bbsme8cS.js"() {
     "use strict";
     import_jsx_runtime33 = __toESM(require_jsx_runtime(), 1);
     init_esm5();
     import_react39 = __toESM(require_react(), 1);
     init_react();
     init_PageHeader_STPzDVcA();
-    init_router_YM59nK0l();
-    init_input_0PFr6SsO();
-    init_label_6FI40CjM();
+    init_router_WrAphpZi();
+    init_input_D90GIDN9();
+    init_label_D61Nlcsz();
     init_dist6();
     import_jspdf = __toESM(require_jspdf_node_min(), 1);
     import_lucide_react5 = __toESM(require_lucide_react(), 1);
@@ -120968,9 +120968,9 @@ var init_payment_CLEhxNN5 = __esm({
   }
 });
 
-// dist/server/assets/packages-DhTqwLzN.js
-var packages_DhTqwLzN_exports = {};
-__export(packages_DhTqwLzN_exports, {
+// dist/server/assets/packages-zRnjq4p5.js
+var packages_zRnjq4p5_exports = {};
+__export(packages_zRnjq4p5_exports, {
   component: () => PackagesPage
 });
 function PackagesPage() {
@@ -121001,15 +121001,15 @@ function PackagesPage() {
   ] });
 }
 var import_jsx_runtime34, import_lucide_react6, import_react41, PACKS;
-var init_packages_DhTqwLzN = __esm({
-  "dist/server/assets/packages-DhTqwLzN.js"() {
+var init_packages_zRnjq4p5 = __esm({
+  "dist/server/assets/packages-zRnjq4p5.js"() {
     "use strict";
     import_jsx_runtime34 = __toESM(require_jsx_runtime(), 1);
     init_esm5();
     init_PageHeader_STPzDVcA();
     init_Reveal_DXQFk0YT();
     import_lucide_react6 = __toESM(require_lucide_react(), 1);
-    init_CTA_DvQ09J_t();
+    init_CTA_BZHDXPNM();
     import_react41 = __toESM(require_react(), 1);
     init_dist5();
     init_clsx();
@@ -122156,9 +122156,9 @@ var init_dist21 = __esm({
   }
 });
 
-// dist/server/assets/faq-eWUb80HP.js
-var faq_eWUb80HP_exports = {};
-__export(faq_eWUb80HP_exports, {
+// dist/server/assets/faq-DPzcC9Wc.js
+var faq_DPzcC9Wc_exports = {};
+__export(faq_DPzcC9Wc_exports, {
   component: () => FAQPage
 });
 function FAQPage() {
@@ -122172,16 +122172,16 @@ function FAQPage() {
   ] });
 }
 var import_jsx_runtime44, React29, import_lucide_react7, Accordion2, AccordionItem2, AccordionTrigger2, AccordionContent2;
-var init_faq_eWUb80HP = __esm({
-  "dist/server/assets/faq-eWUb80HP.js"() {
+var init_faq_DPzcC9Wc = __esm({
+  "dist/server/assets/faq-DPzcC9Wc.js"() {
     "use strict";
     import_jsx_runtime44 = __toESM(require_jsx_runtime(), 1);
-    init_router_YM59nK0l();
+    init_router_WrAphpZi();
     init_PageHeader_STPzDVcA();
     React29 = __toESM(require_react(), 1);
     init_dist21();
     import_lucide_react7 = __toESM(require_lucide_react(), 1);
-    init_CTA_DvQ09J_t();
+    init_CTA_BZHDXPNM();
     init_dist5();
     init_clsx();
     init_dist6();
@@ -122217,14 +122217,14 @@ var init_faq_eWUb80HP = __esm({
   }
 });
 
-// dist/server/assets/textarea-BLHdplBv.js
+// dist/server/assets/textarea-CkMBEWlv.js
 var import_jsx_runtime45, React30, Textarea;
-var init_textarea_BLHdplBv = __esm({
-  "dist/server/assets/textarea-BLHdplBv.js"() {
+var init_textarea_CkMBEWlv = __esm({
+  "dist/server/assets/textarea-CkMBEWlv.js"() {
     "use strict";
     import_jsx_runtime45 = __toESM(require_jsx_runtime(), 1);
     React30 = __toESM(require_react(), 1);
-    init_router_YM59nK0l();
+    init_router_WrAphpZi();
     Textarea = React30.forwardRef(
       ({ className, ...props }, ref) => {
         return /* @__PURE__ */ (0, import_jsx_runtime45.jsx)(
@@ -122244,9 +122244,9 @@ var init_textarea_BLHdplBv = __esm({
   }
 });
 
-// dist/server/assets/contact-DSMHjtGx.js
-var contact_DSMHjtGx_exports = {};
-__export(contact_DSMHjtGx_exports, {
+// dist/server/assets/contact-CESBu9IP.js
+var contact_CESBu9IP_exports = {};
+__export(contact_CESBu9IP_exports, {
   component: () => ContactPage
 });
 function ContactPage() {
@@ -122341,15 +122341,15 @@ function ContactPage() {
   ] });
 }
 var import_jsx_runtime46, import_react45, import_lucide_react8;
-var init_contact_DSMHjtGx = __esm({
-  "dist/server/assets/contact-DSMHjtGx.js"() {
+var init_contact_CESBu9IP = __esm({
+  "dist/server/assets/contact-CESBu9IP.js"() {
     "use strict";
     import_jsx_runtime46 = __toESM(require_jsx_runtime(), 1);
     init_PageHeader_STPzDVcA();
-    init_router_YM59nK0l();
-    init_input_0PFr6SsO();
-    init_label_6FI40CjM();
-    init_textarea_BLHdplBv();
+    init_router_WrAphpZi();
+    init_input_D90GIDN9();
+    init_label_D61Nlcsz();
+    init_textarea_CkMBEWlv();
     import_react45 = __toESM(require_react(), 1);
     init_dist6();
     import_lucide_react8 = __toESM(require_lucide_react(), 1);
@@ -128490,16 +128490,16 @@ var init_dist35 = __esm({
   }
 });
 
-// dist/server/assets/select-B3itvbNk.js
+// dist/server/assets/select-DbTTABNr.js
 var import_jsx_runtime55, React45, import_lucide_react9, Select2, SelectValue2, SelectTrigger2, SelectScrollUpButton2, SelectScrollDownButton2, SelectContent2, SelectLabel2, SelectItem2, SelectSeparator2;
-var init_select_B3itvbNk = __esm({
-  "dist/server/assets/select-B3itvbNk.js"() {
+var init_select_DbTTABNr = __esm({
+  "dist/server/assets/select-DbTTABNr.js"() {
     "use strict";
     import_jsx_runtime55 = __toESM(require_jsx_runtime(), 1);
     React45 = __toESM(require_react(), 1);
     init_dist35();
     import_lucide_react9 = __toESM(require_lucide_react(), 1);
-    init_router_YM59nK0l();
+    init_router_WrAphpZi();
     Select2 = Root24;
     SelectValue2 = Value;
     SelectTrigger2 = React45.forwardRef(({ className, children, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)(
@@ -128603,9 +128603,9 @@ var init_select_B3itvbNk = __esm({
   }
 });
 
-// dist/server/assets/careers-BkGOHs-o.js
-var careers_BkGOHs_o_exports = {};
-__export(careers_BkGOHs_o_exports, {
+// dist/server/assets/careers-BxJwkwqO.js
+var careers_BxJwkwqO_exports = {};
+__export(careers_BxJwkwqO_exports, {
   component: () => CareersPage
 });
 function CareersPage() {
@@ -128691,16 +128691,16 @@ function CareersPage() {
   ] });
 }
 var import_jsx_runtime56, import_react47, import_lucide_react10;
-var init_careers_BkGOHs_o = __esm({
-  "dist/server/assets/careers-BkGOHs-o.js"() {
+var init_careers_BxJwkwqO = __esm({
+  "dist/server/assets/careers-BxJwkwqO.js"() {
     "use strict";
     import_jsx_runtime56 = __toESM(require_jsx_runtime(), 1);
     init_PageHeader_STPzDVcA();
-    init_router_YM59nK0l();
-    init_input_0PFr6SsO();
-    init_label_6FI40CjM();
-    init_textarea_BLHdplBv();
-    init_select_B3itvbNk();
+    init_router_WrAphpZi();
+    init_input_D90GIDN9();
+    init_label_D61Nlcsz();
+    init_textarea_CkMBEWlv();
+    init_select_DbTTABNr();
     import_react47 = __toESM(require_react(), 1);
     init_dist6();
     init_Reveal_DXQFk0YT();
@@ -128710,9 +128710,9 @@ var init_careers_BkGOHs_o = __esm({
   }
 });
 
-// dist/server/assets/booking-D2HGV_N4.js
-var booking_D2HGV_N4_exports = {};
-__export(booking_D2HGV_N4_exports, {
+// dist/server/assets/booking-Cx20Ht4j.js
+var booking_Cx20Ht4j_exports = {};
+__export(booking_Cx20Ht4j_exports, {
   component: () => BookingPage
 });
 function BookingPage() {
@@ -128885,18 +128885,18 @@ function BookingPage() {
   ] });
 }
 var import_jsx_runtime57, import_react48, import_lucide_react11, SLOTS_BY_SERVICE, DEFAULT_SLOTS;
-var init_booking_D2HGV_N4 = __esm({
-  "dist/server/assets/booking-D2HGV_N4.js"() {
+var init_booking_Cx20Ht4j = __esm({
+  "dist/server/assets/booking-Cx20Ht4j.js"() {
     "use strict";
     import_jsx_runtime57 = __toESM(require_jsx_runtime(), 1);
     init_esm5();
     init_PageHeader_STPzDVcA();
     import_react48 = __toESM(require_react(), 1);
-    init_router_YM59nK0l();
-    init_input_0PFr6SsO();
-    init_label_6FI40CjM();
-    init_textarea_BLHdplBv();
-    init_select_B3itvbNk();
+    init_router_WrAphpZi();
+    init_input_D90GIDN9();
+    init_label_D61Nlcsz();
+    init_textarea_CkMBEWlv();
+    init_select_DbTTABNr();
     init_dist6();
     init_services_B0CwK93V();
     import_lucide_react11 = __toESM(require_lucide_react(), 1);
@@ -128997,9 +128997,9 @@ var init_about_team_KpQV9b_D = __esm({
   }
 });
 
-// dist/server/assets/about-cyGXtjBF.js
-var about_cyGXtjBF_exports = {};
-__export(about_cyGXtjBF_exports, {
+// dist/server/assets/about-dfUH3EMe.js
+var about_dfUH3EMe_exports = {};
+__export(about_dfUH3EMe_exports, {
   component: () => AboutPage
 });
 function AboutPage() {
@@ -129126,8 +129126,8 @@ function AboutPage() {
   ] });
 }
 var import_jsx_runtime59, import_lucide_react13, import_react49, VALUES, TIMELINE, CERTS;
-var init_about_cyGXtjBF = __esm({
-  "dist/server/assets/about-cyGXtjBF.js"() {
+var init_about_dfUH3EMe = __esm({
+  "dist/server/assets/about-dfUH3EMe.js"() {
     "use strict";
     import_jsx_runtime59 = __toESM(require_jsx_runtime(), 1);
     init_esm5();
@@ -129135,7 +129135,7 @@ var init_about_cyGXtjBF = __esm({
     init_Reveal_DXQFk0YT();
     import_lucide_react13 = __toESM(require_lucide_react(), 1);
     init_about_team_KpQV9b_D();
-    init_CTA_DvQ09J_t();
+    init_CTA_BZHDXPNM();
     import_react49 = __toESM(require_react(), 1);
     init_dist5();
     init_clsx();
@@ -129190,9 +129190,9 @@ var init_about_cyGXtjBF = __esm({
   }
 });
 
-// dist/server/assets/index-CRnLLQLe.js
-var index_CRnLLQLe_exports = {};
-__export(index_CRnLLQLe_exports, {
+// dist/server/assets/index-Bd_4kDjL.js
+var index_Bd_4kDjL_exports = {};
+__export(index_Bd_4kDjL_exports, {
   component: () => Home
 });
 function Hero() {
@@ -129453,19 +129453,19 @@ function Home() {
   ] });
 }
 var import_jsx_runtime60, import_react50, import_lucide_react14, SLIDES, ITEMS, ICONS2, STEPS;
-var init_index_CRnLLQLe = __esm({
-  "dist/server/assets/index-CRnLLQLe.js"() {
+var init_index_Bd_4kDjL = __esm({
+  "dist/server/assets/index-Bd_4kDjL.js"() {
     "use strict";
     import_jsx_runtime60 = __toESM(require_jsx_runtime(), 1);
     import_react50 = __toESM(require_react(), 1);
     init_react();
     import_lucide_react14 = __toESM(require_lucide_react(), 1);
     init_esm5();
-    init_router_YM59nK0l();
+    init_router_WrAphpZi();
     init_services_B0CwK93V();
     init_Reveal_DXQFk0YT();
     init_Testimonials_BEkzd85o();
-    init_CTA_DvQ09J_t();
+    init_CTA_BZHDXPNM();
     init_about_team_KpQV9b_D();
     init_dist5();
     init_clsx();
@@ -129525,9 +129525,9 @@ var init_index_CRnLLQLe = __esm({
   }
 });
 
-// dist/server/assets/router-YM59nK0l.js
-var router_YM59nK0l_exports = {};
-__export(router_YM59nK0l_exports, {
+// dist/server/assets/router-WrAphpZi.js
+var router_WrAphpZi_exports = {};
+__export(router_WrAphpZi_exports, {
   B: () => Button,
   F: () => FAQS,
   S: () => SITE,
@@ -129545,14 +129545,13 @@ function Logo({ light = false }) {
       {
         src: logoSrc,
         alt: "The Ashma Home Care",
-        width: 56,
-        height: 56,
-        className: `h-14 w-14 object-contain transition-transform group-hover:scale-105 ${light ? "brightness-0 invert" : ""}`
+        style: { width: 90, height: 90 },
+        className: `object-contain transition-transform group-hover:scale-105 ${light ? "brightness-0 invert" : ""}`
       }
     ),
     /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)("span", { className: "leading-tight", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("span", { className: `block font-display text-[16px] font-bold tracking-tight ${light ? "text-white" : "text-navy"}`, children: "The ASHMA" }),
-      /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("span", { className: `block text-[11px] uppercase tracking-[0.18em] ${light ? "text-white/70" : "text-muted-foreground"}`, children: "Home Care" })
+      /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("span", { className: `block font-display text-[18px] font-bold tracking-tight ${light ? "text-white" : "text-navy"}`, children: "The ASHMA" }),
+      /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("span", { className: `block text-[12px] uppercase tracking-[0.18em] ${light ? "text-white/70" : "text-muted-foreground"}`, children: "Home Care" })
     ] })
   ] });
 }
@@ -129575,7 +129574,7 @@ function Header2() {
     {
       className: `fixed top-0 inset-x-0 z-40 transition-all ${scrolled ? "bg-background/85 backdrop-blur-lg border-b border-border shadow-sm" : "bg-transparent"}`,
       children: [
-        /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)("div", { className: "mx-auto max-w-7xl px-4 sm:px-6 h-16 md:h-18 flex items-center justify-between gap-4", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)("div", { className: "mx-auto max-w-7xl px-4 sm:px-6 h-24 flex items-center justify-between gap-4", children: [
           /* @__PURE__ */ (0, import_jsx_runtime61.jsx)(Logo, {}),
           /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("nav", { className: "hidden lg:flex items-center gap-1", children: NAV.map((n2) => /* @__PURE__ */ (0, import_jsx_runtime61.jsx)(
             Link,
@@ -129761,15 +129760,15 @@ function RootComponent() {
   const { queryClient } = Route$c.useRouteContext();
   return /* @__PURE__ */ (0, import_jsx_runtime61.jsx)(QueryClientProvider, { client: queryClient, children: /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)("div", { className: "min-h-screen flex flex-col", children: [
     /* @__PURE__ */ (0, import_jsx_runtime61.jsx)(Header2, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("main", { className: "flex-1 pt-16 md:pt-18", children: /* @__PURE__ */ (0, import_jsx_runtime61.jsx)(Outlet, {}) }),
+    /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("main", { className: "flex-1 pt-24", children: /* @__PURE__ */ (0, import_jsx_runtime61.jsx)(Outlet, {}) }),
     /* @__PURE__ */ (0, import_jsx_runtime61.jsx)(Footer, {}),
     /* @__PURE__ */ (0, import_jsx_runtime61.jsx)(FloatingActions, {}),
     /* @__PURE__ */ (0, import_jsx_runtime61.jsx)(Toaster3, { richColors: true, position: "top-right" })
   ] }) });
 }
 var import_jsx_runtime61, import_lucide_react15, React46, import_react52, appCss, logoSrc, SITE, NAV, whatsappLink, buttonVariants, Button, Toaster3, Route$c, $$splitComponentImporter$a, Route$b, BASE_URL, PATHS, Route$a, $$splitComponentImporter$9, Route$9, $$splitComponentImporter$8, Route$8, $$splitComponentImporter$7, Route$7, FAQS, $$splitComponentImporter$6, Route$6, $$splitComponentImporter$5, Route$5, $$splitComponentImporter$4, Route$4, $$splitComponentImporter$3, Route$3, $$splitComponentImporter$2, Route$2, $$splitComponentImporter$1, Route$1, slide1, slide2, slide3, $$splitComponentImporter, Route2, TestimonialsRoute, SitemapDotxmlRoute, ServicesRoute, PaymentRoute, PackagesRoute, FaqRoute, ContactRoute, CareersRoute, BookingRoute, BlogRoute, AboutRoute, IndexRoute, rootRouteChildren, routeTree, getRouter, router;
-var init_router_YM59nK0l = __esm({
-  "dist/server/assets/router-YM59nK0l.js"() {
+var init_router_WrAphpZi = __esm({
+  "dist/server/assets/router-WrAphpZi.js"() {
     "use strict";
     init_modern2();
     init_esm5();
@@ -129782,7 +129781,7 @@ var init_router_YM59nK0l = __esm({
     init_clsx();
     init_bundle_mjs();
     init_dist6();
-    appCss = "/assets/styles-BaxVvY3H.css";
+    appCss = "/assets/styles-AUtD6WQ7.css";
     logoSrc = "/assets/logo-sebimshZ.png";
     SITE = {
       phones: ["01836402287", "01756-427804"],
@@ -129901,7 +129900,7 @@ var init_router_YM59nK0l = __esm({
       notFoundComponent: NotFoundComponent,
       errorComponent: ErrorComponent2
     });
-    $$splitComponentImporter$a = () => Promise.resolve().then(() => (init_testimonials_D8FKqS_6(), testimonials_D8FKqS_6_exports));
+    $$splitComponentImporter$a = () => Promise.resolve().then(() => (init_testimonials_DuDFC7Za(), testimonials_DuDFC7Za_exports));
     Route$b = createFileRoute("/testimonials")({
       head: () => ({
         meta: [{
@@ -129939,7 +129938,7 @@ ${urls}
         }
       }
     });
-    $$splitComponentImporter$9 = () => Promise.resolve().then(() => (init_services_CT_KffNO(), services_CT_KffNO_exports));
+    $$splitComponentImporter$9 = () => Promise.resolve().then(() => (init_services_Zn8CzWDw(), services_Zn8CzWDw_exports));
     Route$9 = createFileRoute("/services")({
       head: () => ({
         meta: [{
@@ -129961,7 +129960,7 @@ ${urls}
       }),
       component: lazyRouteComponent($$splitComponentImporter$9, "component")
     });
-    $$splitComponentImporter$8 = () => Promise.resolve().then(() => (init_payment_CLEhxNN5(), payment_CLEhxNN5_exports));
+    $$splitComponentImporter$8 = () => Promise.resolve().then(() => (init_payment_Bbsme8cS(), payment_Bbsme8cS_exports));
     Route$8 = createFileRoute("/payment")({
       head: () => ({
         meta: [{
@@ -129973,7 +129972,7 @@ ${urls}
       }),
       component: lazyRouteComponent($$splitComponentImporter$8, "component")
     });
-    $$splitComponentImporter$7 = () => Promise.resolve().then(() => (init_packages_DhTqwLzN(), packages_DhTqwLzN_exports));
+    $$splitComponentImporter$7 = () => Promise.resolve().then(() => (init_packages_zRnjq4p5(), packages_zRnjq4p5_exports));
     Route$7 = createFileRoute("/packages")({
       head: () => ({
         meta: [{
@@ -130020,7 +130019,7 @@ ${urls}
       q: "Do you coordinate with our doctor?",
       a: "Yes, our nurses follow your physician's care plan and provide regular updates as required."
     }];
-    $$splitComponentImporter$6 = () => Promise.resolve().then(() => (init_faq_eWUb80HP(), faq_eWUb80HP_exports));
+    $$splitComponentImporter$6 = () => Promise.resolve().then(() => (init_faq_DPzcC9Wc(), faq_DPzcC9Wc_exports));
     Route$6 = createFileRoute("/faq")({
       head: () => ({
         meta: [{
@@ -130057,7 +130056,7 @@ ${urls}
       }),
       component: lazyRouteComponent($$splitComponentImporter$6, "component")
     });
-    $$splitComponentImporter$5 = () => Promise.resolve().then(() => (init_contact_DSMHjtGx(), contact_DSMHjtGx_exports));
+    $$splitComponentImporter$5 = () => Promise.resolve().then(() => (init_contact_CESBu9IP(), contact_CESBu9IP_exports));
     Route$5 = createFileRoute("/contact")({
       head: () => ({
         meta: [{
@@ -130079,7 +130078,7 @@ ${urls}
       }),
       component: lazyRouteComponent($$splitComponentImporter$5, "component")
     });
-    $$splitComponentImporter$4 = () => Promise.resolve().then(() => (init_careers_BkGOHs_o(), careers_BkGOHs_o_exports));
+    $$splitComponentImporter$4 = () => Promise.resolve().then(() => (init_careers_BxJwkwqO(), careers_BxJwkwqO_exports));
     Route$4 = createFileRoute("/careers")({
       head: () => ({
         meta: [{
@@ -130101,7 +130100,7 @@ ${urls}
       }),
       component: lazyRouteComponent($$splitComponentImporter$4, "component")
     });
-    $$splitComponentImporter$3 = () => Promise.resolve().then(() => (init_booking_D2HGV_N4(), booking_D2HGV_N4_exports));
+    $$splitComponentImporter$3 = () => Promise.resolve().then(() => (init_booking_Cx20Ht4j(), booking_Cx20Ht4j_exports));
     Route$3 = createFileRoute("/booking")({
       head: () => ({
         meta: [{
@@ -130145,7 +130144,7 @@ ${urls}
       }),
       component: lazyRouteComponent($$splitComponentImporter$2, "component")
     });
-    $$splitComponentImporter$1 = () => Promise.resolve().then(() => (init_about_cyGXtjBF(), about_cyGXtjBF_exports));
+    $$splitComponentImporter$1 = () => Promise.resolve().then(() => (init_about_dfUH3EMe(), about_dfUH3EMe_exports));
     Route$1 = createFileRoute("/about")({
       head: () => ({
         meta: [{
@@ -130170,7 +130169,7 @@ ${urls}
     slide1 = "/assets/hero-nurse-elderly-lwuA7ZWd.jpg";
     slide2 = "/assets/hero-elderly-care-Bvb0dZnO.jpg";
     slide3 = "/assets/hero-family-D0FZLfGe.jpg";
-    $$splitComponentImporter = () => Promise.resolve().then(() => (init_index_CRnLLQLe(), index_CRnLLQLe_exports));
+    $$splitComponentImporter = () => Promise.resolve().then(() => (init_index_Bd_4kDjL(), index_Bd_4kDjL_exports));
     Route2 = createFileRoute("/")({
       head: () => ({
         meta: [{
@@ -130392,9 +130391,9 @@ var init_tanstack_start_plugin_adapters_Cwee5PKy = __esm({
   }
 });
 
-// dist/server/assets/server-mM9wdPRV.js
-var server_mM9wdPRV_exports = {};
-__export(server_mM9wdPRV_exports, {
+// dist/server/assets/server-BoxO7A98.js
+var server_BoxO7A98_exports = {};
+__export(server_BoxO7A98_exports, {
   createServerEntry: () => createServerEntry,
   default: () => server_default
 });
@@ -130451,7 +130450,7 @@ function getResponse() {
   return getH3Event().res;
 }
 async function getStartManifest(matchedRoutes) {
-  const { tsrStartManifest: tsrStartManifest2 } = await Promise.resolve().then(() => (init_tanstack_start_manifest_v_BMMvzRpB(), tanstack_start_manifest_v_BMMvzRpB_exports));
+  const { tsrStartManifest: tsrStartManifest2 } = await Promise.resolve().then(() => (init_tanstack_start_manifest_v_D6MxA_76(), tanstack_start_manifest_v_D6MxA_76_exports));
   const startManifest = tsrStartManifest2();
   const rootRoute = startManifest.routes[rootRouteId] = startManifest.routes[rootRouteId] || {};
   rootRoute.assets = rootRoute.assets || [];
@@ -131031,7 +131030,7 @@ function handleCollectedEarlyHints(opts) {
 }
 async function loadEntries() {
   const [routerEntry, startEntry, pluginAdapters] = await Promise.all([
-    Promise.resolve().then(() => (init_router_YM59nK0l(), router_YM59nK0l_exports)).then((n2) => n2.r),
+    Promise.resolve().then(() => (init_router_WrAphpZi(), router_WrAphpZi_exports)).then((n2) => n2.r),
     Promise.resolve().then(() => (init_start_D4mdwD77(), start_D4mdwD77_exports)),
     Promise.resolve().then(() => (init_tanstack_start_plugin_adapters_Cwee5PKy(), tanstack_start_plugin_adapters_Cwee5PKy_exports))
   ]);
@@ -131380,8 +131379,8 @@ function createServerEntry(entry) {
   } };
 }
 var import_node_async_hooks, import_react53, import_jsx_runtime62, defaultStreamHandler, GLOBAL_EVENT_STORAGE_KEY, globalObj$1, eventStorage, HEADERS, manifest, TSS_FORMDATA_CONTEXT, TSS_SERVER_FUNCTION, X_TSS_SERIALIZED, X_TSS_RAW_RESPONSE, TSS_CONTENT_TYPE_FRAMED, FrameType, FRAME_HEADER_SIZE, TSS_CONTENT_TYPE_FRAMED_VERSIONED, GLOBAL_STORAGE_KEY, globalObj, startStorage, getStartOptions, textEncoder2, EMPTY_PAYLOAD, serovalPlugins, FORM_DATA_CONTENT_TYPES, MAX_PAYLOAD_SIZE, handleServerAction, LINK_PARAM_TOKEN_RE, PRELOAD_AS_VALUES, ServerFunctionSerializationAdapter, entriesPromise, baseManifestPromise, cachedFinalManifestPromise, ROUTER_BASEPATH, SERVER_FN_BASE, IS_PRERENDERING, IS_SHELL_ENV, ERR_NO_RESPONSE, ERR_NO_DEFER, fetch2, server_default;
-var init_server_mM9wdPRV = __esm({
-  "dist/server/assets/server-mM9wdPRV.js"() {
+var init_server_BoxO7A98 = __esm({
+  "dist/server/assets/server-BoxO7A98.js"() {
     "use strict";
     import_node_async_hooks = require("node:async_hooks");
     init_node2();
@@ -131708,7 +131707,7 @@ function renderErrorPage() {
 }
 async function getServerEntry() {
   if (!serverEntryPromise) {
-    serverEntryPromise = Promise.resolve().then(() => (init_server_mM9wdPRV(), server_mM9wdPRV_exports)).then(
+    serverEntryPromise = Promise.resolve().then(() => (init_server_BoxO7A98(), server_BoxO7A98_exports)).then(
       (m4) => m4.default ?? m4
     );
   }
