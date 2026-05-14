@@ -12,14 +12,6 @@ export function Logo({ light = false }: { light?: boolean }) {
           light ? "brightness-0 invert" : ""
         }`}
       />
-      <span className="leading-tight">
-        <span className={`block font-display text-[18px] font-bold tracking-tight ${light ? "text-white" : "text-navy"}`}>
-          The ASHMA
-        </span>
-        <span className={`block text-[12px] uppercase tracking-[0.18em] ${light ? "text-white/70" : "text-muted-foreground"}`}>
-          Home Care
-        </span>
-      </span>
     </Link>
   );
 }
