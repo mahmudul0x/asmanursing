@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" fill="none">
+  <!-- Globe circle -->
+  <circle cx="100" cy="95" r="72" stroke="#2196F3" stroke-width="7" fill="white"/>
+  <!-- Globe vertical lines -->
+  <ellipse cx="100" cy="95" rx="30" ry="72" stroke="#2196F3" stroke-width="4.5" fill="none"/>
+  <ellipse cx="100" cy="95" rx="56" ry="72" stroke="#2196F3" stroke-width="2.5" fill="none"/>
+  <!-- Globe horizontal lines -->
+  <line x1="28" y1="72" x2="172" y2="72" stroke="#2196F3" stroke-width="4"/>
+  <line x1="28" y1="95" x2="172" y2="95" stroke="#2196F3" stroke-width="4"/>
+  <line x1="28" y1="118" x2="172" y2="118" stroke="#2196F3" stroke-width="4"/>
+
+  <!-- Red heart -->
+  <path d="M100 140 C100 140 68 120 68 100 C68 89 76 82 84 82 C91 82 96 87 100 92 C104 87 109 82 116 82 C124 82 132 89 132 100 C132 120 100 140 100 140Z" fill="#E53935"/>
+  <!-- White cross on heart -->
+  <rect x="95" y="88" width="10" height="28" rx="3" fill="white"/>
+  <rect x="86" y="97" width="28" height="10" rx="3" fill="white"/>
+
+  <!-- Elderly patient (left person) -->
+  <!-- Head -->
+  <circle cx="85" cy="108" r="7" fill="#FFCCBC"/>
+  <!-- Mask -->
+  <rect x="79" y="110" width="12" height="6" rx="3" fill="#BDBDBD"/>
+  <!-- Body -->
+  <path d="M80 118 Q85 116 90 118 L92 138 L78 138Z" fill="#795548"/>
+  <!-- Walking stick -->
+  <line x1="92" y1="120" x2="96" y2="148" stroke="#5D4037" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Legs -->
+  <line x1="82" y1="138" x2="80" y2="150" stroke="#795548" stroke-width="4" stroke-linecap="round"/>
+  <line x1="88" y1="138" x2="90" y2="150" stroke="#795548" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Doctor (right person) -->
+  <!-- Head -->
+  <circle cx="115" cy="105" r="8" fill="#FFCCBC"/>
+  <!-- Hair -->
+  <path d="M107 103 Q115 97 123 103" fill="#212121"/>
+  <!-- White coat body -->
+  <path d="M107 115 Q115 112 123 115 L125 140 L105 140Z" fill="white" stroke="#E0E0E0" stroke-width="1"/>
+  <!-- Blue shirt under coat -->
+  <rect x="111" y="115" width="8" height="15" fill="#1565C0"/>
+  <!-- Tie -->
+  <path d="M115 115 L113 125 L115 128 L117 125Z" fill="#1A237E"/>
+  <!-- Stethoscope -->
+  <path d="M110 118 Q106 126 109 130" stroke="#9E9E9E" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Legs -->
+  <line x1="110" y1="140" x2="108" y2="152" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+  <line x1="118" y1="140" x2="120" y2="152" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+  <!-- Arm around patient -->
+  <path d="M107 120 Q100 122 95 120" stroke="#FFCCBC" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Green checkmark -->
+  <path d="M72 62 L86 76 L116 46" stroke="#43A047" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Text: The Ashma Home Care -->
+  <text x="100" y="183" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="700" text-anchor="middle" fill="#1A1A1A" letter-spacing="0.5">The Ashma Home Care</text>
+</svg>
