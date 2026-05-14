@@ -8,9 +8,7 @@ export function Logo({ light = false }: { light?: boolean }) {
         src={logoSrc}
         alt="The Ashma Home Care"
         style={{ width: 52, height: 52 }}
-        className={`object-contain transition-transform group-hover:scale-105 ${
-          light ? "brightness-0 invert" : ""
-        }`}
+        className="object-contain transition-transform group-hover:scale-105"
       />
 <span className="leading-none flex flex-col gap-0.5">
         <span
