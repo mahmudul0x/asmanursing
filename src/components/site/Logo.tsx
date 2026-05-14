@@ -12,9 +12,7 @@ export function Logo({ light = false }: { light?: boolean }) {
           light ? "brightness-0 invert" : ""
         }`}
       />
-      {/* Vertical divider line */}
-      <span className={`w-px self-stretch mx-0.5 ${light ? "bg-white/30" : "bg-border"}`} />
-      <span className="leading-none flex flex-col gap-0.5">
+<span className="leading-none flex flex-col gap-0.5">
         <span
           className={`font-display font-extrabold tracking-tight leading-none ${
             light ? "text-white" : "text-navy"
